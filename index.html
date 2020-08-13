@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tareas</title>
+    <link rel="stylesheet" href="css/skeleton.css">
+    <style>
+        h1, h2, h3 {
+            text-align: center;
+            padding: 40px 0;
+        }
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 80%;
+            margin: auto;
+        }
+        .contenedor > * {
+            
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .lista {
+            justify-self: center;
+        }
+        small {
+            color: #616161;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Tareas</h1>
+    <h2>Reloj</h2>
+    
+    <div class="contenedor">
+        <div class="formulario">
+            <div class="contenedor-formulario">
+                <div class="grupo-input">
+                    <label for="tarea">Nombre de la Tarea <small>Max 20 Digitos</small> </label>
+                    <input type="text" id="tarea">
+                </div>
+                <div class="grupo-input">
+                    <button class="button-primary" id="add">Añadir</button>
+                    <button class="button-primary" id="clean">Limpiar</button>
+                </div>
+                <h3 id="reloj">
+                    <span id="hor">00</span>:
+                    <span id="min">00</span>:
+                    <span id="seg">00</span>
+                </h3>
+            </div>
+        </div>
+        <div class="lista">
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
